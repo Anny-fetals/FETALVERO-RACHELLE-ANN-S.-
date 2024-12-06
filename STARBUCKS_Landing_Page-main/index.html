@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <section>
+      <div class="circle"></div>
+      <header>
+        <a href="#"><img src="images/logo.png" class="logo" /></a>
+        <ul>
+          <li><a class="header-btn" href="#home">Home</a></li>
+          <li><a class="header-btn" href="#menu">Menu</a></li>
+          <li><a class="header-btn" href="#whatsnew">What's New</a></li>
+          <li><a class="header-btn" href="#contact">Contact</a></li>
+        </ul>
+
+       
+        <div class="cart-container">
+          <a href="#" id="cart-icon">
+            <img src="images/cart-icon.png" alt="Cart" />
+            <span id="cart-count">0</span> 
+          </a>
+        </div>
+      </header>
+
+      <div class="content" id="home">
+        <div class="textbox">
+          <h2>It's not just Coffee<br />It's <span>Starbucks</span></h2>
+          <p>
+            Starbucks is a global coffeehouse chain known for its high-quality coffee, specialty drinks, and café-style atmosphere. Founded in 1971 in Seattle, Washington, by Jerry Baldwin, Zev Siegl, and Gordon Bowker, it started as a small coffee bean roaster and retailer.
+            The company's transformation into the coffeehouse chain we recognize today is largely credited to Howard Schultz, who joined Starbucks in 1982 and later became its CEO.
+            Schultz is known for popularizing the concept of the "third place" — a comfortable and welcoming space between home and work where customers can enjoy their drinks, use Wi-Fi, or relax.
+          </p>
+          <a class="active-color" href="#">Learn More</a>
+        </div>
+        <div class="imgBox">
+          <img src="images/img1.png" class="starbucks" />
+        </div>
+      </div>
+
+      
+      <div class="section" id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+          <div class="menu-item">
+            <img src="images/thumb1.png" alt="Matcha" />
+            <p>Matcha</p>
+            <label for="matcha-quantity">Quantity:</label>
+            <input type="number" id="matcha-quantity" class="product-quantity" min="1" value="1" />
+            <button class="add-to-cart" data-product="Matcha">
+              Add to Cart
+            </button>
+          </div>
+          <div class="menu-item">
+            <img src="images/thumb2.png" alt="Strawberry" />
+            <p>Strawberry</p>
+            <label for="strawberry-quantity">Quantity:</label>
+            <input type="number" id="strawberry-quantity" class="product-quantity" min="1" value="1" />
+            <button class="add-to-cart" data-product="Strawberry" >
+              Add to Cart
+            </button>
+          </div>
+          <div class="menu-item">
+            <img src="images/thumb3.png" alt="Ube Hazelnut" />
+            <p>Ube Hazelnut</p>
+            <label for="ube-quantity">Quantity:</label>
+            <input type="number" id="ube-quantity" class="product-quantity" min="1" value="1" />
+            <button class="add-to-cart" data-product="Ube Hazelnut">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="whatsnew">
+        <h2>What's New</h2>
+        <p>Check out our latest offerings and seasonal drinks!</p>
+      </div>
+
+      <div id="contact">
+        <h2>Contact Us</h2>
+        <p>Feel free to reach out for any inquiries!</p>
+      </div>
+
+      <ul class="sci">
+        <li>
+          <a href="#"><img src="images/facebook.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="images/twitter.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="images/instagram.png" /></a>
+        </li>
+      </ul>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
